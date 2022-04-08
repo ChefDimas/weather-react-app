@@ -1,7 +1,25 @@
+import { useEffect } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import "./App.sass";
 
 function App() {
+  useEffect(() => {
+    // Declaring constants
+    const app = document.querySelector(".App");
+    const temp = document.querySelector(".temp");
+    const dateOutput = document.querySelector(".date");
+    const timeOutput = document.querySelector(".time");
+    const conditionOutput = document.querySelector(".condition");
+    const nameOutput = document.querySelector(".name");
+    const icon = document.querySelector(".icon");
+    const cloudOutput = document.querySelector(".cloud");
+    const humidityOutput = document.querySelector(".humidity");
+    const windOutput = document.querySelector(".wind");
+    const form = document.querySelector(".form");
+    const search = document.querySelector(".search");
+    const btn = document.querySelector(".submit");
+    const cities = document.querySelector(".city");
+  });
   return (
     <div className="App">
       <div className="container">
