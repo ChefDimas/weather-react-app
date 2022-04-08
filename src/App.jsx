@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import "./App.sass";
 
@@ -19,6 +19,8 @@ function App() {
     const search = document.querySelector(".search");
     const btn = document.querySelector(".submit");
     const cities = document.querySelector(".city");
+
+    var cityInput = "London";
   });
   return (
     <div className="App">
