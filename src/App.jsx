@@ -17,13 +17,13 @@ function App() {
           </div>
           <div className="weather">
             <img
-              src={require("./assets/icons/day/113.png")}
+              src={require("./assets/icons/day/116.png")}
               alt="weather"
               width="50"
               height="50"
               className="icon"
             />
-            <span className="condition">Sunny</span>
+            <span className="condition">Cloudy</span>
           </div>
         </div>
       </div>
