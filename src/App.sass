@@ -51,13 +51,17 @@ body
     align-items: center
 
 .city-time, .temp, .weather
-  margin: 0 1em
+  margin: 0 2em
 
 .city-time
+  display: flex
+  flex-direction: column  
   h1
     margin: 0
     margin-bottom: 0.2em
     font-size: 3em
+  .time
+    padding-right: 1em
 
 .temp
   font-size: 7em
@@ -65,6 +69,9 @@ body
 
 
 .weather 
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
   img
     display: block
     margin: 0.5em 0
@@ -85,6 +92,16 @@ body
   overflow-y: scroll
   form
     margin-bottom: 3em
+  ul
+    padding: 0 0 1em 0
+    margin: 2em 0
+    border-bottom: 1px solid #ccc
+  ul, li
+    color: #ccc
+    margin: 2.5em 0
+
+  ul,h4
+    margin: 3em 0
 
 .submit
   position: absolute
@@ -112,3 +129,23 @@ body
   width: 80%
   color: #fff
   font-size: 1.1em
+
+.search::focus
+  outline: none
+
+.search::placeholder
+  color: #ccc
+
+
+.city
+  display: block
+  cursor: pointer
+
+.city::hover
+  color: #fff
+
+.details
+  li
+    display: flex
+    justify-content: space-between
+
