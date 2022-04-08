@@ -27,7 +27,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="pannel">
+      <div className="panel">
         <form className="location-input">
           <input
             type="text"
