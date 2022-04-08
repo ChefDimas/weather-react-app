@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6
   font-weight: 400
 
 .App
-  minheight : 100vh
+  min-height : 100vh
   background-image: url("./assets/img/day/cloudy.jpg")
   background-position: center
   background-repeat: no-repeat
@@ -60,3 +60,30 @@ h1, h2, h3, h4, h5, h6
   position: relative
   transition: 500ms 
   opacity: 1 //Change to 0 after finish
+.App::before 
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.3)
+    z-index: 0
+
+.container
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  flex-direction: column
+  div
+    display: flex
+    justify-content: center
+    align-items: center
+
+.city-time, .temp, .weather
+  
