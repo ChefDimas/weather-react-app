@@ -1,5 +1,5 @@
 import { AiOutlineSearch } from "react-icons/ai";
-import "./App.css";
+import "./App.sass";
 
 function App() {
   return (
