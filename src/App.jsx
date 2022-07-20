@@ -12,10 +12,10 @@ function App() {
       <div className={classes.container}>
         <div className={classes.top_section}>
           <div className={classes.location}>
-            <h1>Bucharest</h1>
+            <p>Bucharest</p>
           </div>
           <div className={classes.temp}>
-            <p>60 Deg</p>
+            <h1>60 Deg</h1>
           </div>
           <div className={classes.description}>
             <p>Clouds</p>
@@ -23,13 +23,16 @@ function App() {
         </div>
         <div className={classes.bottom_section}>
           <div className={classes.feels}>
-            <p>55 Deg</p>
+            <p className={classes.bold}>55 Deg</p>
+            <p>Feels like</p>
           </div>
           <div className={classes.humidity}>
-            <p>20%</p>
+            <p className={classes.bold}>20%</p>
+            <p>Humidity</p>
           </div>
           <div className={classes.wind}>
-            <p>5km/h</p>
+            <p className={classes.bold}>5 m/s</p>
+            <p>Wind Speed</p>
           </div>
         </div>
       </div>
